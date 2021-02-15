@@ -1,0 +1,41 @@
+class Animal {
+  produzirVitaminaD() {
+    console.log("ingerir vitamina D");
+  }
+
+  fazerBarulho() {
+    console.log("iuashdkasjhdkasjhkasjhd");
+  }
+}
+
+class Gato extends Animal {
+  
+  fazerBarulho() {
+    super.fazerBarulho();
+    console.log("miau");
+  }
+
+  afiarUnhas(){
+    console.log("procurar sofa");
+  }
+
+}
+
+class Humano extends Animal {
+  produzirVitaminaD() {
+    super.produzirVitaminaD();
+    console.log("pegar sol");
+  }
+}
+
+
+var gato = new Gato();
+gato.afiarUnhas();  
+
+/* 
+gato.produzirVitaminaD();
+*/
+
+var humano = new Humano();
+humano.produzirVitaminaD(); 
+
